@@ -1,0 +1,95 @@
+<sequence-diagram version="1.0.9" icons="true" automaticImage="JPEG">  
+  <object id="1" language="java" name="client.Player" project="ProjectSD" file="/ProjectSD/src/client/Player.java" 
+    binary="false" label="player" type="interface" autoSize="false">    
+    <position height="513" width="94" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="385" width="59" x="5" y="86"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="115" width="90" x="5" y="488"/>    
+    </execution>  
+  </object>  
+  <object id="8" language="java" name="client.Player" project="ProjectSD" file="/ProjectSD/src/client/Player.java" 
+    binary="false" label="P1:player" type="interface" autoSize="false">    
+    <position height="602" width="153" x="103" y="0"/>    
+    <execution id="4">      
+      <position height="343" width="88" x="5" y="107"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="7" x="91" y="200"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="73" width="178" x="99" y="509"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="manager.ManagerToken" project="ProjectSD" 
+    file="/ProjectSD/src/manager/ManagerToken.java" binary="false" label="M1:managerToken" type="class" autoSize="false">    
+    <position height="262" width="148" x="276" y="0"/>    
+    <execution id="10">      
+      <position height="93" width="107" x="97" y="149"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="client.Player" project="ProjectSD" file="/ProjectSD/src/client/Player.java" 
+    binary="false" label="P2:player" type="interface" autoSize="false">    
+    <position height="581" width="148" x="404" y="0"/>    
+    <execution id="12">      
+      <position height="163" width="181" x="408" y="266"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="7" x="495" y="316"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="181" x="502" y="540"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="manager.ManagerToken" project="ProjectSD" 
+    file="/ProjectSD/src/manager/ManagerToken.java" binary="false" label="M2:managerToken" type="class" autoSize="false">    
+    <position height="378" width="139" x="549" y="0"/>    
+    <execution id="20">      
+      <position height="71" width="220" x="593" y="287"/>    
+    </execution>  
+  </object>  
+  <object id="26" language="java" name="client.Player" project="ProjectSD" file="/ProjectSD/src/client/Player.java" 
+    binary="false" label="player" type="interface" autoSize="false">    
+    <position height="99" width="88" x="875" y="0"/>    
+    <execution id="22">      
+      <position height="21" width="84" x="911" y="387"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="nextTurn(manager.Message,manager.Token):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="updateState(manager.Message,manager.Token,client.Player,boolean,boolean,boolean):void">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="updateLocalFromToken(manager.Token):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="updateState(manager.Message,manager.Token,client.Player,boolean,boolean,boolean):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="14" operation="nextTurn(manager.Message,manager.Token):void">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="17">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="19" operation="updateLocalFromToken(manager.Token):void">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="updateState(manager.Message,manager.Token,client.Player,boolean,boolean,boolean):void">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="25">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>
+</sequence-diagram>
